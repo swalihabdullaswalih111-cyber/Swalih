@@ -1,0 +1,23 @@
+html{scroll-behavior:smooth}
+.eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#8A8A90}
+.btn-solid,.btn-ghost{display:inline-block;padding:.9rem 1.6rem;font-size:12px;letter-spacing:.2em;text-transform:uppercase;transition:.3s}
+.btn-solid{background:#EDEDED;color:#0A0A0B}.btn-solid:hover{background:#3B82F6;color:#fff}
+.btn-ghost{border:1px solid #333}.btn-ghost:hover{border-color:#3B82F6;color:#3B82F6}
+.cap{margin-top:.6rem;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A8A90}
+/* image wrapper: img fills box via object-fit, never stretched */
+.ph{position:relative;overflow:hidden;background:#141416;border:1px solid #222226;width:100%}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease;z-index:1}
+.ph::after{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#6a6a70;background:repeating-linear-gradient(45deg,transparent 0 12px,rgba(255,255,255,.02) 12px 24px)}
+.ph.loaded::after{display:none}
+.ph.missing img{display:none}
+.zoom:hover img{transform:scale(1.04)}
+.dark-treat.loaded img{filter:grayscale(.25) contrast(1.05) brightness(.9)}
+.dark-treat.loaded::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(10,10,11,.55),transparent 45%);pointer-events:none}
+.hero-frame{position:relative}
+.hero-frame::before{content:"";position:absolute;top:-12px;right:-12px;width:38%;height:38%;border-top:2px solid #3B82F6;border-right:2px solid #3B82F6;border-radius:0 6px 0 0;pointer-events:none}
+@media(max-width:1023px){.hero-frame{max-width:420px;margin:0 auto}}
+.card:hover h3{color:#3B82F6}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+#lb.open{display:flex}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.ph img{transition:none}}

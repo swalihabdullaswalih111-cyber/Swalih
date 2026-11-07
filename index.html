@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SWALIH® — Graphic Designer & Design Educator</title>
+<meta name="description" content="Portfolio of Swalih, a graphic designer and design educator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:'#0A0A0B',panel:'#111113',line:'#222226',paper:'#EDEDED',mute:'#8A8A90',accent:'#3B82F6'},fontFamily:{serif:['"Playfair Display"','Georgia','serif'],sans:['Inter','system-ui','sans-serif']}}}}
+</script>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="bg-ink text-paper font-sans antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-40 bg-ink/80 backdrop-blur border-b border-line">
+  <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#home" class="font-serif text-xl tracking-wide">SWALIH<sup class="text-accent text-xs">®</sup></a>
+    <ul id="menu" class="hidden md:flex gap-8 text-xs uppercase tracking-[.2em] text-mute">
+      <li><a href="#about" class="hover:text-paper">About</a></li>
+      <li><a href="#services" class="hover:text-paper">Services</a></li>
+      <li><a href="#work" class="hover:text-paper">Work</a></li>
+      <li><a href="#process" class="hover:text-paper">Process</a></li>
+      <li><a href="#gallery" class="hover:text-paper">Gallery</a></li>
+      <li><a href="#contact" class="hover:text-accent">Contact</a></li>
+    </ul>
+    <button id="burger" class="md:hidden text-xs uppercase tracking-[.2em]" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </nav>
+</header>
+
+<main>
+<!-- 1. HERO -->
+<section id="home" class="pt-28 md:pt-32 pb-20 md:pb-28">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 reveal">
+      <p class="eyebrow">Graphic Designer · Design Master</p>
+      <h1 class="font-serif text-5xl sm:text-6xl xl:text-7xl leading-[1.05] mt-6">Designing with <em class="text-accent not-italic font-serif italic">intent</em>, teaching with clarity.</h1>
+      <p class="text-mute mt-8 max-w-xl leading-relaxed">I craft brand identities and visual systems, and teach the next generation of designers how to think, sketch and ship.</p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#work" class="btn-solid">View work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="lg:col-span-5 reveal">
+      <figure class="hero-frame">
+        <div class="ph dark-treat rounded-md" style="aspect-ratio:4/5" data-label="Hero portrait · swalih-hero.webp · 4:5 · 1200×1500">
+          <img src="assets/images/profile/swalih-hero.jpg" alt="Portrait of Swalih, graphic designer and design educator" width="1200" height="1500" fetchpriority="high" decoding="async">
+        </div>
+        <figcaption class="mt-3 flex justify-between text-[11px] uppercase tracking-[.2em] text-mute"><span>Swalih</span><span class="text-accent">Designer / Educator</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+    <div class="md:col-span-5 reveal">
+      <div class="ph dark-treat" style="aspect-ratio:3/4" data-label="Profile portrait · swalih-profile.webp · 3:4 · 1200×1600">
+        <img src="assets/images/profile/swalih-profile.webp" alt="Professional portrait of Swalih" width="1200" height="1600" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <div class="md:col-span-7 reveal">
+      <p class="eyebrow">About</p>
+      <h2 class="font-serif text-4xl md:text-5xl mt-4 leading-tight">Design is a craft, and a conversation.</h2>
+      <div class="mt-8 space-y-5 text-mute leading-relaxed max-w-2xl">
+        <!-- EDIT: replace with your own biography -->
+        <p>I'm Swalih, a graphic designer and design educator. My practice sits between branding, visual communication and teaching, shaping ideas into clear, memorable visuals.</p>
+        <p>In the classroom and in the studio I focus on fundamentals: hierarchy, typography, colour and storytelling, supported by tools like Photoshop and Illustrator.</p>
+      </div>
+      <dl class="mt-10 grid sm:grid-cols-3 gap-6 border-t border-line pt-8 text-sm">
+        <div><dt class="eyebrow">Role</dt><dd class="mt-2">Graphic Designer</dd></div>
+        <div><dt class="eyebrow">Teaching</dt><dd class="mt-2">Photoshop · Illustrator</dd></div>
+        <div><dt class="eyebrow">Focus</dt><dd class="mt-2">Branding · Mentoring</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="eyebrow">Services</p>
+    <h2 class="font-serif text-4xl md:text-5xl mt-4">What I do</h2>
+    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line reveal">
+      <article class="bg-ink p-8"><span class="text-accent text-sm">01</span><h3 class="font-serif text-2xl mt-4">Branding</h3><p class="text-mute text-sm mt-3">Logos, identities and brand guidelines.</p></article>
+      <article class="bg-ink p-8"><span class="text-accent text-sm">02</span><h3 class="font-serif text-2xl mt-4">Visual Design</h3><p class="text-mute text-sm mt-3">Posters, social and print collateral.</p></article>
+      <article class="bg-ink p-8"><span class="text-accent text-sm">03</span><h3 class="font-serif text-2xl mt-4">Training</h3><p class="text-mute text-sm mt-3">Photoshop and Illustrator courses.</p></article>
+      <article class="bg-ink p-8"><span class="text-accent text-sm">04</span><h3 class="font-serif text-2xl mt-4">Mentoring</h3><p class="text-mute text-sm mt-3">Portfolio reviews and career guidance.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="eyebrow">Selected Work</p>
+    <h2 class="font-serif text-4xl md:text-5xl mt-4">Projects</h2>
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <!-- EDIT: replace placeholders with project covers -->
+      <a href="#" class="card reveal"><div class="ph" style="aspect-ratio:4/3" data-label="Project cover · 4:3"></div><h3 class="font-serif text-xl mt-4">Project One</h3><p class="text-mute text-sm">Branding</p></a>
+      <a href="#" class="card reveal"><div class="ph" style="aspect-ratio:4/3" data-label="Project cover · 4:3"></div><h3 class="font-serif text-xl mt-4">Project Two</h3><p class="text-mute text-sm">Visual identity</p></a>
+      <a href="#" class="card reveal"><div class="ph" style="aspect-ratio:4/3" data-label="Project cover · 4:3"></div><h3 class="font-serif text-xl mt-4">Project Three</h3><p class="text-mute text-sm">Print design</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. BEHIND THE SCENES -->
+<section id="process" class="py-20 md:py-28 border-t border-line bg-panel">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="eyebrow">Behind the scenes</p>
+    <h2 class="font-serif text-4xl md:text-5xl mt-4 uppercase tracking-wide">Behind the Creative Process</h2>
+    <p class="text-mute mt-6 max-w-2xl leading-relaxed">Every design has a process. Explore a glimpse into my creative workspace, teaching journey and everyday design practice.</p>
+    <div class="mt-12 grid grid-cols-2 lg:grid-cols-6 gap-4 md:gap-6">
+      <figure class="lg:col-span-3 reveal"><div class="ph zoom" style="aspect-ratio:3/2" data-label="Working on graphic design projects · design-work-01.webp · 3:2 · 1500×1000"><img src="assets/images/behind-the-scenes/design-work-01.webp" alt="Swalih working on a graphic design project at his desk" width="1500" height="1000" loading="lazy" decoding="async"></div><figcaption class="cap">Working on graphic design projects</figcaption></figure>
+      <figure class="lg:col-span-3 reveal"><div class="ph zoom" style="aspect-ratio:3/2" data-label="Teaching Photoshop &amp; Illustrator · teaching-01.webp · 3:2 · 1500×1000"><img src="assets/images/behind-the-scenes/teaching-01.webp" alt="Swalih teaching Photoshop and Illustrator to a class" width="1500" height="1000" loading="lazy" decoding="async"></div><figcaption class="cap">Teaching Photoshop &amp; Illustrator</figcaption></figure>
+      <figure class="lg:col-span-2 reveal"><div class="ph zoom" style="aspect-ratio:4/5" data-label="Branding concepts · creative-process-01.webp · 4:5 · 1000×1250"><img src="assets/images/behind-the-scenes/creative-process-01.webp" alt="Branding concept sketches and layouts in progress" width="1000" height="1250" loading="lazy" decoding="async"></div><figcaption class="cap">Working on branding concepts</figcaption></figure>
+      <figure class="lg:col-span-2 reveal"><div class="ph zoom" style="aspect-ratio:4/5" data-label="Mentoring students · mentoring-01.webp · 4:5 · 1000×1250"><img src="assets/images/behind-the-scenes/mentoring-01.webp" alt="Swalih mentoring a student on their design work" width="1000" height="1250" loading="lazy" decoding="async"></div><figcaption class="cap">Mentoring students</figcaption></figure>
+      <figure class="col-span-2 lg:col-span-2 reveal"><div class="ph zoom" style="aspect-ratio:4/5" data-label="Creative workspace · workspace-01.webp · 4:5 · 1000×1250"><img src="assets/images/behind-the-scenes/workspace-01.webp" alt="Swalih's creative workspace with desk, screen and tools" width="1000" height="1250" loading="lazy" decoding="async"></div><figcaption class="cap">Creative workspace</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PERSONAL GALLERY -->
+<section id="gallery" class="py-20 md:py-28 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="eyebrow">Personal</p>
+    <h2 class="font-serif text-4xl md:text-6xl mt-4">More than just design.</h2>
+    <div class="mt-12 grid grid-cols-6 gap-4 md:gap-6 items-start" id="gal">
+      <div class="ph zoom col-span-4 reveal" style="aspect-ratio:3/2" data-label="photo-01.webp · 3:2 · 1600×1067"><img src="assets/images/gallery/photo-01.webp" alt="Personal photograph 1 of Swalih" width="1600" height="1067" loading="lazy" decoding="async"></div>
+      <div class="ph zoom col-span-2 reveal" style="aspect-ratio:3/4" data-label="photo-02.webp · 3:4 · 900×1200"><img src="assets/images/gallery/photo-02.webp" alt="Personal photograph 2 of Swalih" width="900" height="1200" loading="lazy" decoding="async"></div>
+      <div class="ph zoom col-span-2 reveal" style="aspect-ratio:4/5" data-label="photo-03.webp · 4:5 · 1000×1250"><img src="assets/images/gallery/photo-03.webp" alt="Personal photograph 3 of Swalih" width="1000" height="1250" loading="lazy" decoding="async"></div>
+      <div class="ph zoom col-span-4 reveal" style="aspect-ratio:16/10" data-label="photo-04.webp · 16:10 · 1600×1000"><img src="assets/images/gallery/photo-04.webp" alt="Personal photograph 4 of Swalih" width="1600" height="1000" loading="lazy" decoding="async"></div>
+    </div>
+    <p class="text-mute text-xs mt-6">Tap any photo to enlarge.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 md:py-32 border-t border-line text-center">
+  <div class="max-w-3xl mx-auto px-6 reveal">
+    <p class="eyebrow">Contact</p>
+    <h2 class="font-serif text-4xl md:text-6xl mt-4">Let's create something <em class="text-accent">together</em>.</h2>
+    <!-- EDIT: replace email -->
+    <a href="mailto:hello@example.com" class="btn-solid mt-10 inline-block">hello@example.com</a>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-line py-8 text-center text-xs text-mute tracking-[.2em] uppercase">© <span id="yr"></span> SWALIH® — All rights reserved</footer>
+
+<!-- Lightbox -->
+<div id="lb" class="hidden fixed inset-0 z-50 bg-black/90 items-center justify-center p-6" role="dialog" aria-modal="true" aria-label="Photo preview">
+  <button id="lb-x" class="absolute top-5 right-6 text-xs uppercase tracking-[.2em]">Close ✕</button>
+  <button id="lb-p" class="absolute left-4 top-1/2 text-2xl px-3" aria-label="Previous">‹</button>
+  <button id="lb-n" class="absolute right-4 top-1/2 text-2xl px-3" aria-label="Next">›</button>
+  <img id="lb-img" class="max-h-[85vh] max-w-full object-contain" alt="">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
