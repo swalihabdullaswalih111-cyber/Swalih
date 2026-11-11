@@ -46,3 +46,40 @@ $(function(){
     if(e.key==='ArrowLeft') show(idx-1);
   });
 });
+
+
+const cursor = document.querySelector(".custom-cursor");
+
+let mouseX = 0;
+let mouseY = 0;
+let cursorX = 0;
+let cursorY = 0;
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function animateCursor() {
+    cursorX += (mouseX - cursorX) * 0.15;
+    cursorY += (mouseY - cursorY) * 0.15;
+
+    cursor.style.left = `${cursorX}px`;
+    cursor.style.top = `${cursorY}px`;
+
+    requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
+
+// Hover effect
+document.querySelectorAll("a, button, input, .clickable")
+    .forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+            cursor.classList.add("hover");
+        });
+
+        element.addEventListener("mouseleave", () => {
+            cursor.classList.remove("hover");
+        });
+    });
